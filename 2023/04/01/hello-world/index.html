@@ -24,7 +24,7 @@
 <meta property="og:description" content="相关工具及技术介绍 Github GitHub 是一个基于 Web 的代码托管平台，允许开发者将代码存储在云端并进行版本控制，这使得开发者可以协作开发、共享代码并控制代码的变更。GitHub 成立于 2008 年，现在已经成为全球最大的开源社区之一，拥有数千万的注册用户和数百万的开源项目。   Git Git 是一个分布式版本控制系统，它允许开发者对代码进行版本控制，并跟踪代码的变化。Git最初用">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-01T13:55:07.000Z">
-<meta property="article:modified_time" content="2023-04-02T07:07:49.092Z">
+<meta property="article:modified_time" content="2023-04-02T07:21:32.968Z">
 <meta property="article:author" content="Long Teng">
 <meta property="article:tag" content="报告">
 <meta name="twitter:card" content="summary_large_image">
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.1k 字
+          2.8k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          26 分钟
+          24 分钟
         
       </span>
     
@@ -295,16 +295,37 @@
 </li>
 <li><p><strong>常用命令</strong>：</p>
 <ul>
-<li>```<br> hexo new &lt;标题&gt; 新建文章<br> hexo generate 生成静态文件<br> hexo publish 发布草稿<br> hexo server 启动服务器。默认情况下访问网址为<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a><br> hexo deploy 部署网站<br> hexo clean 清除缓存文件<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey">      <br><span class="hljs-title">    - More info: [Writing](https://hexo.io/docs/writing.html)、[Server](https://hexo.io/docs/server.html)、[Generating](https://hexo.io/docs/generating.html)、[Deployment](https:</span>//hexo.io/docs/one-command-deployment.html)<br>  <br>- #### Typora<br><br>  - Typora 是一个免费的开源文本编辑器，支持多种编程语言和格式，并且可以在多个平台上使用。Typora 的设计目标是简单、高效和易于使用。它支持 HTML、CSS、JavaScript、TypeScript、Python、Perl、Ruby 等编程语言，并且可以自动检测并加载相关语法文件，使开发者可以更轻松地编写代码。Typora 还提供了许多其他功能，例如代码折叠、自动完成、代码片段、查找和替换等。<br><br><br>## 博客搭建思路<br><br>​		该博客主要思路是运用 `Github Pages` + `Hexo` 来实现的。<br><br>#### 具体步骤如下：<br><br><span class="hljs-number">1</span>. 需要一个`GitHub`账号，没有的话去https://github.com/注册一个<br><br><span class="hljs-number">2</span>. 安装`Git`, `hexo`部署到`github`时要用。网上随便找一个安装教程<br><br><span class="hljs-number">3</span>. 安装`NodeJS`, `Hexo`是基于`NodeJS`编写的，所以需要安装`NodeJS`和`npm`工具<br><br><span class="hljs-number">4</span>. 在`GitHub`上创建一个新的代码仓库用于保存我们的网页，其中 `repository name`格式为<br><br></code></pre></td></tr></table></figure>
-用户名.github.io<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey">   <br><span class="hljs-number">5</span>. 安装`Hexo`, 并通过一些简单的指令代码在本地启动`server`.随后可以通过访问 http://localhost:<span class="hljs-number">4000</span>来验浏览本地页面。<br><br><span class="hljs-number">6</span>. 挑选主题（如NexT主题，Fluid主题等）后并使用<br><br><span class="hljs-number">7</span>. 发布到`Github pages`，可以先安装`hexo-deployer-git`，然后修改根目录下的`config`信息，配置好对应的`github` 相关信息，如下所示：<br><br></code></pre></td></tr></table></figure>
-deploy:<br>type: git<br>repo: <a target="_blank" rel="noopener" href="https://github.com/yaorongke/yaorongke.github.io.git">https://github.com/yaorongke/yaorongke.github.io.git</a><br>branch: main<br>token: ghp_3KakcaPHerunNRyMerofcFd9pblU282FSbsY</li>
+<li><code>hexo new &lt;标题&gt; 新建文章</code><br> <code>hexo generate 生成静态文件</code><br> <code>hexo publish 发布草稿</code><br> <code>hexo server 启动服务器。默认情况下访问网址为http://localhost:4000/</code><br> <code>hexo deploy 部署网站</code><br> <code>hexo clean 清除缓存文件</code></li>
+<li>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a>、<a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a>、<a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a>、<a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></li>
 </ul>
 </li>
 </ul>
-<p> ```</p>
-<p> 其中<code>token</code> 为 <code>Github</code> 的 <code>Personal access tokens</code> </p>
+</li>
+<li><h4 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h4><ul>
+<li>Typora 是一个免费的开源文本编辑器，支持多种编程语言和格式，并且可以在多个平台上使用。Typora 的设计目标是简单、高效和易于使用。它支持 HTML、CSS、JavaScript、TypeScript、Python、Perl、Ruby 等编程语言，并且可以自动检测并加载相关语法文件，使开发者可以更轻松地编写代码。Typora 还提供了许多其他功能，例如代码折叠、自动完成、代码片段、查找和替换等。</li>
+</ul>
 </li>
 </ul>
+<h2 id="博客搭建思路"><a href="#博客搭建思路" class="headerlink" title="博客搭建思路"></a>博客搭建思路</h2><p>​        该博客主要思路是运用 <code>Github Pages</code> + <code>Hexo</code> 来实现的。</p>
+<h4 id="具体步骤如下："><a href="#具体步骤如下：" class="headerlink" title="具体步骤如下："></a>具体步骤如下：</h4><ol>
+<li><p>需要一个<code>GitHub</code>账号，没有的话去<a target="_blank" rel="noopener" href="https://github.com/%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA">https://github.com/注册一个</a></p>
+</li>
+<li><p>安装<code>Git</code>, <code>hexo</code>部署到<code>github</code>时要用。网上随便找一个安装教程</p>
+</li>
+<li><p>安装<code>NodeJS</code>, <code>Hexo</code>是基于<code>NodeJS</code>编写的，所以需要安装<code>NodeJS</code>和<code>npm</code>工具</p>
+</li>
+<li><p>在<code>GitHub</code>上创建一个新的代码仓库用于保存我们的网页，其中 <code>repository name</code>格式为</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">用户名<span class="hljs-string">.github.io</span><br></code></pre></td></tr></table></figure></li>
+<li><p>安装<code>Hexo</code>, 并通过一些简单的指令代码在本地启动<code>server</code>.随后可以通过访问 <a href="http://localhost:4000来验浏览本地页面。">http://localhost:4000来验浏览本地页面。</a></p>
+</li>
+<li><p>挑选主题（如NexT主题，Fluid主题等）后并使用</p>
+</li>
+<li><p>发布到<code>Github pages</code>，可以先安装<code>hexo-deployer-git</code>，然后修改根目录下的<code>config</code>信息，配置好对应的<code>github</code> 相关信息，如下所示：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> https:<span class="hljs-comment">//github.com/yaorongke/yaorongke.github.io.git</span><br><span class="hljs-symbol">  branch:</span> main<br><span class="hljs-symbol">  token:</span> ghp_3KakcaPHerunNRyMerofcFd9pblU282FSbsY<br><br></code></pre></td></tr></table></figure>
+
+<p>其中<code>token</code> 为 <code>Github</code> 的 <code>Personal access tokens</code> </p>
+</li>
+</ol>
 <h2 id="博客主题DIY"><a href="#博客主题DIY" class="headerlink" title="博客主题DIY"></a>博客主题DIY</h2><ul>
 <li><h4 id="主题来源"><a href="#主题来源" class="headerlink" title="主题来源"></a>主题来源</h4><ul>
 <li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
